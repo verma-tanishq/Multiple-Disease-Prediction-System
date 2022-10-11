@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 import numpy as np
 import pickle
 
-diabetes_model = pickle.load(open('models/diabetes.pkl', 'rb'))
-cancer_model = pickle.load(open('models/cancer.pkl', 'rb'))
-heart_model = pickle.load(open('models/heart.pkl', 'rb'))
-liver_model = pickle.load(open('models/liver.pkl', 'rb'))
-kidney_model = pickle.load(open('models/kidney.pkl', 'rb'))
+diabetes_model = pickle.load(open('Models/diabetes.pkl', 'rb'))
+cancer_model = pickle.load(open('Models/cancer.pkl', 'rb'))
+heart_model = pickle.load(open('Models/heart.pkl', 'rb'))
+liver_model = pickle.load(open('Models/liver.pkl', 'rb'))
+kidney_model = pickle.load(open('Models/kidney.pkl', 'rb'))
 
 app = Flask(__name__)
 
